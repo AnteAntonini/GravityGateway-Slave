@@ -20,7 +20,7 @@ let slave = Gateway({
 });
 
 
-slave.on('helloSlave', (event) => console.log(event.data))
+slave.on('helloSlave', (event) => console.log(event.data.masterMessage))
 
 export default {
   name: 'Slave',
